@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: bapril27new1 
-          image: march30acr.azurecr.io/bapril27new1
+          image: march30acr.azurecr.io/manual-april27-3
           ports:
           - containerPort: 80
 ---
