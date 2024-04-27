@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bapril27new1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bapril27new1
+  template:
+    metadata:
+      labels:
+        app: bapril27new1 
+    spec:
+      containers:
+        - name: bapril27new1 
+          image: march30acr.azurecr.io/bapril27new1
+          ports:
+          - containerPort: 80
